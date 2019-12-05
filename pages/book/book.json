@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "book-book": "/components/book/index",
+    "search-book": "/components/search/index"
+  },
+  "window": {
+    "onReachBottomDistance": "60"
+  }
+}

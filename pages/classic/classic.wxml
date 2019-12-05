@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="header">
+    <epsoide-classic
+      class="epsoide"
+      index="{{classic.index}}" 
+      pubdate="{{pubdate}}"
+    />
+    <like-cmp
+      class="like"
+      catch:like="onLike"
+      like="{{likeStatus}}"
+      count="{{likeCount}}"
+    />
+  </view>
+  <movie-classic
+    class="movie"
+    image="{{classic.image}}"
+    content="{{classic.content}}"
+    hidden="{{classic.type !== 100}}"
+  />
+  <!-- <music-classic
+    class="music"
+    image="{{classic.image}}"
+    content="{{classic.content}}"
+    src="{{classic.url}}"
+    hidden="{{classic.type !== 200}}"
+  /> -->
+  <essay-classic
+    class="essay"
+    image="{{classic.image}}"
+    content="{{classic.content}}"
+    hidden="{{classic.type !== 300}}"
+  />
+  <nav-classic
+    bind:left="onNext"
+    bind:right="onPrevious"
+    class="nav"
+    title="{{classic.title}}"
+    first="{{first}}"
+    latest="{{latest}}"
+  />
+</view>

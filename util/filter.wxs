@@ -1,0 +1,21 @@
+// wxs 公用 function
+
+// \\n 转化为 \n
+var format = function(text) { // text: String
+  if(!text) {
+    return
+  }
+  var reg = getRegExp('\\\\n', 'g') // 查找 \\n
+  return text.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;') // \\n 替换 \n
+}
+
+// 过滤器 - 书籍短评
+var limit = function(array, length) { // array: Array(), length: Number
+  return array.slice(0, length) // 截取前 length条短评数据
+}
+
+// 导出 wxs变量
+module.exports = {
+  format: format,
+  limit: limit
+}

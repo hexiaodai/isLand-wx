@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tag-book": "/components/tag/index",
+    "like-book": "/components/like/index",
+    "mask-book": "/components/mask/index"
+  }
+}
