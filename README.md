@@ -1,4 +1,4 @@
-# isLand_wx & isLand_WebServer（[微信小程序NodeServer](https://gitee.com/hexiaodai/isLand-node.git)）
+# isLand-wx & isLand-WebServer（[微信小程序NodeServer](https://gitee.com/hexiaodai/isLand-node.git)）
 #### 软件架构
 技术栈：微信原生框架
 #### 项目tree
