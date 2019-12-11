@@ -1,37 +1,61 @@
-# isLand_wx
-
-#### 介绍
-微信小程序客户的，isLand_WebServer是该项目的服务端
-
+# isLand_wx & isLand_WebServer（[微信小程序NodeServer](https://gitee.com/hexiaodai/isLand-node.git)）
 #### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+技术栈：微信原生框架
+#### 项目tree
+```
+├── app.js                项目启动文件
+├── app.json              公共配置
+├── app.wxss              公共样式  
+├── components            公共组件库
+│   ├── behaviors
+│   ├── book
+│   │   ├── index.js      页面逻辑
+│   │   ├── index.json    页面配置
+│   │   ├── index.wxml    页面结构
+│   │   └── index.wxss    页面样式表
+│   ├── classic
+│   ├── epsoide
+│   ├── image-botton
+│   ├── images
+│   ├── like
+│   ├── loading
+│   ├── mask
+│   ├── nav
+│   ├── preview
+│   ├── search
+│   └── tag
+├── config.js             项目公用配置信息
+├── images                图片资源
+│   ├── book
+│   │   ├── quality.png
+│   │   └── tip.png
+│   ├── icon
+│   ├── my
+│   └── tab
+├── models                数据模型，获取API接口返回的数据
+│   ├── book.js
+│   ├── classic.js
+│   ├── keyword.js
+│   ├── like.js
+│   └── token.js
+├── pages                 小程序页面
+│   ├── book
+│   │   ├── book.js
+│   │   ├── book.json
+│   │   ├── book.wxml
+│   │   └── book.wxss
+│   ├── book-detail
+│   ├── classic
+│   └── my
+├── project.config.json   项目配置文件
+├── sitemap.json
+└── util                  工具函数
+    ├── base64.js
+    ├── common.js
+    ├── filter.wxs
+    ├── http-p.js
+    └── http.js
+```
+#### 项目预览
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1205/203101_213ec13e_5174336.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1205/203211_cda88f5a_5174336.png "屏幕截图.png")
